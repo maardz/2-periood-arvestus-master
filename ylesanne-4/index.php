@@ -11,7 +11,7 @@
     <?php
     	$name = "arvestus";
     	$value = "Küpsis on olemas! Nom-nom";
-    	$expire = time() + 10;
+    	$expire = time() + 20;
     	setcookie($name, $value, $expire);
 
 
@@ -26,6 +26,6 @@
 	    		echo "Küpsist ei ole!";
 	    	}
     ?>
-    
+
   </body>
 </html>
