@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <form>
+    <form action="result.php" method="post">
       <div class="form-field">
         <input type="text" name="username" placeholder="Kasutajanimi">
       </div>
@@ -25,5 +25,7 @@
         <input type="submit" value="submit">
       </div>
     </form>
+
+    <div><a href="result.php">otsetee</a></div>
   </body>
 </html>
