@@ -6,7 +6,26 @@
   </head>
 
   <body>
-    <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
-    <pre><?php print_r($_COOKIE); ?></pre>
+    
+
+    <?php
+    	$name = "arvestus";
+    	$value = "Küpsis on olemas! Nom-nom";
+    	$expire = time() + 10;
+    	setcookie($name, $value, $expire);
+
+
+	    	if (isset($_COOKIE["arvestus"])) {
+	    		
+	    		echo '<img src="http://www.adweek.com/files/imagecache/node-detail/news_article/tt-cookie-monster-hed-2013_0.jpg">';
+
+	    		echo $value;
+	    	}
+
+	    	else{
+	    		echo "Küpsist ei ole!";
+	    	}
+    ?>
+    
   </body>
 </html>
