@@ -16,7 +16,7 @@
     
 
     <?php
-    	if ($_POST["username"] == $_SESSION["username"] and $_POST["password"] == $_SESSION["password"]) {
+    	if ($_POST["username"] == $validUsername and $_POST["password"] == $validPassword) {
     	echo "Kasutajanimi ja parool on õiged." ;
 
 
