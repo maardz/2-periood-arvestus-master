@@ -7,5 +7,20 @@
 
   <body>
     <a href="index.php">Mine tagasi</a>
+    <br/>
+    <br/>
+
+    <?php
+	   	    $username = $_GET["name"];
+			$age = $_GET["age"];
+	   	if($age > 18){
+	   		echo "Tere $username! Olete lehekülje vaatamiseks piisavalt vana.";
+	   	}
+	   	elseif ($age < 18) {
+	   		echo "Tere $username! Kahjuks olete liiga noor selle lehekülje külastamiseks.";
+	   	}
+	   	
+   ?>
+
   </body>
 </html>
