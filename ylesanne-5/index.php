@@ -1,3 +1,15 @@
+ 
+    <?php
+    	session_start()
+    ?>
+
+
+    <?php	
+    	$_SESSION["username"] = "Marge";
+    	$_SESSION["password"] = "pass";
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,8 +18,18 @@
   </head>
 
   <body>
-    <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
-    <pre><?php print_r($_SESSION); ?></pre>
-    <a href="result.php">Vaata tulemust</a>
+    <form action="result.php" method="post">
+      <div class="form-field">
+        <input type="text" name="username" placeholder="Kasutajanimi">
+      </div>
+      <div class="form-field">
+        <input type="text" name="password" placeholder="parool">
+      </div>
+       <div class="form-field">
+        <input type="submit" value="submit">
+      </div>
+      <form>
+    
+   
   </body>
 </html>
